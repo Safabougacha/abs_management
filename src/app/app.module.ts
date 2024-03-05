@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { LoginEnseignantComponent } from './login-enseignant/login-enseignant.component';
 import { LoginEtudiantComponent } from './login-etudiant/login-etudiant.component';
+import { Routes , RouterModule, ROUTES} from '@angular/router';
+import { RouterLink } from '@angular/router';
+import{HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +26,11 @@ import { LoginEtudiantComponent } from './login-etudiant/login-etudiant.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule // Ajouter ReactiveFormsModule ici
-  ],
+    ReactiveFormsModule,
+    RouterModule,
+    RouterLink,
+    HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

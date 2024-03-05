@@ -13,7 +13,8 @@ const routes: Routes = [{ path: 'login', component: LoginComponent },
 {path:'loginadmin',component:LoginAdminComponent},
 {path:'loginenseignant',component:LoginEnseignantComponent},
 {path:'loginetudiant',component:LoginEtudiantComponent},
-{path:'etudiant',component:EtudiantComponent}];
+{path:'etudiant',component:EtudiantComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
