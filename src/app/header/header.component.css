@@ -1,0 +1,7 @@
+.decorative-box {
+    position: relative;
+    z-index: 1; /* Assurez-vous que l'élément est placé au-dessus du contenu */
+    width: 100%;
+    height: 20px; /* Hauteur du box décoratif */
+    background-color: black;
+}
